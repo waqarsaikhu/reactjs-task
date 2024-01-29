@@ -1,0 +1,42 @@
+.todo-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.checkbox {
+    margin-right: 8px;
+}
+
+.todo-text {
+    flex-grow: 1;
+    margin-right: 8px;
+    color: #333;
+}
+
+.edit-button,
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #eaeaea;
+}
+
+.edit-button {
+    color: #007bff;
+}
+
+.delete-button {
+    color: #dc3545;
+}

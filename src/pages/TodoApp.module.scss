@@ -1,0 +1,38 @@
+/* TodoApp.module.scss */
+
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+   
+}
+
+.app-title {
+    text-align: center;
+    color: #333;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.loading-message {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .todo-app {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .todo-app {
+        max-width: 100%;
+    }
+}
