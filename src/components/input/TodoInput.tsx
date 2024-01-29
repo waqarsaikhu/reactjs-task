@@ -1,5 +1,3 @@
-// TodoInput.tsx
-
 import React, { useState } from "react";
 import styles from "./TodoInput.module.scss";
 
@@ -25,18 +23,20 @@ const TodoInput: React.FC<{ onAddTodo: (text: string) => void }> = ({
 
   return (
     <div className={styles["todo-input"]}>
-      <input
-        type="text"
-        placeholder="Enter Todo"
-        value={inputText}
-        onChange={handleInputChange}
-        className={styles["input-field"]}
-        required
-      />
-      <button onClick={handleAddTodo} className={styles["add-button"]}>
-        Add Todo
-      </button>
-      {error && <p className={styles["error-message"]}>{error}</p>}
+      <div>
+        <input
+          type="text"
+          placeholder="Enter Todo"
+          value={inputText}
+          onChange={handleInputChange}
+          className={styles["input-field"]}
+          required
+        />
+        <button onClick={handleAddTodo} className={styles["add-button"]}>
+          Add Todo
+        </button>
+      </div>
+      {error && <span className={styles["error-message"]}>{error}</span>}
     </div>
   );
 };

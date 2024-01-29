@@ -1,5 +1,3 @@
-// TodoApp.tsx
-
 import React, { useEffect } from "react";
 import styles from "./TodoApp.module.scss";
 import { useSelector } from "react-redux";
